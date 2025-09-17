@@ -117,11 +117,11 @@ def test_cce():
     y_true = np.eye(num_classes)[true_labels]
     
     # Random predictions (softmax normalized)
-    logits = ??? # TODO: Generate random data (what size should this be?)
+    logits = float('nan') # TODO: Generate random data (what size should this be?)
     y_pred = beras.activations.Softmax()(logits)
     
     # Our implementation
-    our_loss = ??? # TODO: Instantiate and call your CategoricalCrossentropy loss function
+    our_loss = float('nan') # TODO: Instantiate and call your CategoricalCrossentropy loss function
     
     # TensorFlow implementation (this uses slightly different syntax than your implementation)
     tf_loss = tf.keras.losses.categorical_crossentropy(y_true, y_pred).numpy().mean()

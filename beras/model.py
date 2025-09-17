@@ -135,6 +135,6 @@ class SequentialModel(Model):
         ## If training, then also update the gradients according to the optimizer
     
         if training:
-            return {"loss": ???, "acc": ???}
+            return {"loss": float('nan'), "acc": float('nan')}
         else:
-            return {"loss": ???, "acc": ???}, predictions
+            return {"loss": float('nan'), "acc": float('nan')}, predictions
