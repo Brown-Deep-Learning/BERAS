@@ -4,5 +4,3 @@ __pycache__/
 .idea/
 .pytest_cache/
 .pytest_cache/
-
-tests/
