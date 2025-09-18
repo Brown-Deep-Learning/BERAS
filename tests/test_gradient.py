@@ -40,7 +40,7 @@ def test_multi_layer_gradients():
     
     # Fixed input and target
     x = core.Tensor([[1.0, 0.5, -0.3]])  # 1x3 input
-    y_true = core.Tensor([[1.5]])         # 1x1 target
+    y_true = core.Tensor([[1.5]])        # 1x1 target 
     
     loss_fn = losses.MeanSquaredError()
     
